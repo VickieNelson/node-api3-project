@@ -1,5 +1,5 @@
-// code away!
-const express = require("express"); // CommonJS module
-const server = express();
-const PORT = 8000; // we visit http://localhost:8000/ to see the api
-server.listen(PORT, () => console.log(`server running on port ${PORT}`));
+const server = require("./server.js");
+
+server.listen(4000, () => {
+  console.log("\n* Server Running on http://localhost:4000 *\n");
+});
